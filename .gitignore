@@ -1,0 +1,9 @@
+.idea/
+*.iml
+build/
+bower_components
+*.log
+.gradle/
+gradle/
+*.bat
+gradlew

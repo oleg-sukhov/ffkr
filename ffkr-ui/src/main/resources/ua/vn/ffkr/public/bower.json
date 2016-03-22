@@ -1,0 +1,15 @@
+{
+  "name": "ffkr",
+  "description": "Client application for ffkr project",
+  "version": "0.0.0",
+  "homepage": "https://github.com/oleg-sukhov/ffkr",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "react": "0.x.x",
+    "react-router": "0.x.x",
+    "react-bootstrap": "0.x.x",
+    "elementalui": "0.x.x",
+    "requirejs": "2.x.x"
+  }
+}

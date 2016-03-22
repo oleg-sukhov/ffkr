@@ -1,0 +1,275 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url(../img/background.jpg);
+    font: 1em/1.2 "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+}
+
+hr {
+    height: 0;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+.ffkr-content {
+    background-color: #cfd0c9;
+}
+
+.ffkr-footer {
+    color: #969790;
+    background: #000;
+    padding: 1em 1.25em;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/* -----------------------
+Layout styles
+------------------------*/
+
+.ffkr-container {
+    max-width: 80em;
+    margin: 2em auto;
+}
+
+.ffkr-header {
+    color: #969790;
+    background: #9DC706;
+    padding: 1em 1.25em;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.ffkr-header-heading {
+    margin: 0;
+}
+
+/*
+    Navigation bar start
+*/
+.ffkr-navbar.navbar {
+    padding: 0;
+    margin-bottom: 0;
+    min-height: 35px;
+    border-radius: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    background-color: #169c00;
+    border-color: #117b00;
+    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#1dcf00), to(#169c00));
+    background-image: -webkit-linear-gradient(top, #1dcf00, 0%, #169c00, 100%);
+    background-image: -moz-linear-gradient(top, #1dcf00 0%, #169c00 100%);
+    background-image: linear-gradient(to bottom, #0E34EC 0%, #233580 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff1dcf00', endColorstr='#ff169c00', GradientType=0);
+}
+
+.ffkr-navbar .navbar-brand {
+    color: #054c93;
+}
+
+.ffkr-navbar .navbar-brand:hover,
+.ffkr-navbar .navbar-brand:focus {
+    color: #0e9305;
+    background-color: transparent;
+}
+
+.ffkr-navbar .navbar-text {
+    color: #ffffff;
+}
+
+.ffkr-navbar .navbar-nav > li:last-child > a {
+    border-right: 1px solid #117b00;
+}
+
+.ffkr-navbar .navbar-nav > li > a {
+    color: #ffffff;
+    border-left: 1px solid #117b00;
+}
+
+.ffkr-navbar .navbar-nav > a:hover,
+.ffkr-navbar .navbar-nav > a:focus {
+    color: #C8F352;
+    background-color: rgba(75, 150, 62, 0.61);
+}
+
+.ffkr-navbar .navbar-nav > li > a:hover,
+.ffkr-navbar .navbar-nav > li > a:focus {
+    color: #C8F352;
+    background-color: rgba(75, 150, 62, 0.61);
+}
+
+.ffkr-navbar .navbar-nav > .open > a,
+.ffkr-navbar .navbar-nav > .open > a:hover,
+.ffkr-navbar .navbar-nav > .open > a:focus {
+    color: #C8F352;
+    background-color: rgba(4, 57, 13, 0.91);
+}
+
+.ffkr-navbar .navbar-nav > .active > a,
+.ffkr-navbar .navbar-nav > .active > a:hover,
+.ffkr-navbar .navbar-nav > .active > a:focus {
+    color: #0800fa;
+    background-color: #117b00;
+    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#117b00), to(#19ae00));
+    background-image: -webkit-linear-gradient(top, #117b00, 0%, #19ae00, 100%);
+    background-image: -moz-linear-gradient(top, #117b00 0%, #19ae00 100%);
+    background-image: linear-gradient(to bottom, #0E34EC 0%, #233580 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff117b00', endColorstr='#ff19ae00', GradientType=0);
+}
+
+.ffkr-navbar .navbar-nav > .disabled > a,
+.ffkr-navbar .navbar-nav > .disabled > a:hover,
+.ffkr-navbar .navbar-nav > .disabled > a:focus {
+    color: #0e9305;
+    background-color: transparent;
+}
+
+.ffkr-navbar .navbar-collapse,
+.ffkr-navbar .navbar-form {
+    border-color: #117800;
+}
+
+.ffkr-navbar .navbar-nav > .dropdown > a .caret {
+    border-top-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.ffkr-navbar .navbar-nav > .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+@media (max-width: 767) {
+    .ffkr-navbar .navbar-nav .open .dropdown-menu > li > a {
+        color: #50336f;
+        background-color: transparent;
+    }
+
+    .ffkr-navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+    .ffkr-navbar .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #0800fa;
+        background-color: transparent;
+    }
+
+    .ffkr-navbar .navbar-nav .open .dropdown-menu > .active > a,
+    .ffkr-navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .ffkr-navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #C8F352;
+        background-color: #117b00;
+    }
+
+    .ffkr-navbar .navbar-nav .open .dropdown-menu > .disabled > a,
+    .ffkr-navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .ffkr-navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #cccccc;
+        background-color: transparent;
+    }
+}
+
+.ffkr-navbar .navbar-link {
+    color: #0e9305;
+}
+
+.ffkr-navbar .navbar-link:hover {
+    color: #0800fa;
+}
+
+.navbar-collapse > .navbar-nav > li > a {
+    padding: 7px;
+}
+
+/*Navigation bar start*/
+/* -----------------------
+Single styles
+------------------------*/
+
+.img-responsive {
+    max-width: 100%;
+}
+
+/* -----------------------
+Wide styles
+------------------------*/
+
+@media (min-width: 52em) {
+    .ffkr-header {
+        padding: 1.5em 3em;
+    }
+
+    .ffkr-navbar {
+        padding: 1em 3em;
+    }
+
+    .ffkr-content {
+        padding: 1em 1em;
+    }
+
+    .ffkr-footer {
+        padding: 2em 3em;
+    }
+
+    .ffkr-nav li {
+        display: inline;
+        margin: 0 1em 0 0;
+    }
+
+    .ffkr-nav a {
+        display: inline;
+        padding: 0;
+        border-bottom: 0;
+    }
+}
+
+/***
+article item style
+****/
+.panel.news-item-panel{
+    padding: 5px;
+}
+
+.news-item {
+    /*border: solid #262626;*/
+    width: 100%;
+    display: inline-flex;
+}
+
+.news-item-avatar {
+    width: 20%;
+    display: inline;
+}
+
+.news-item-body {
+    width: 80%;
+    padding-left: 1%;
+    display: inline;
+}
+
+.news-item-avatar > .thumbnail,
+.news-item-body > .news-item-tags {
+    margin-bottom: 0;
+}
+
+.news-item-body > .news-item-content {
+    margin-bottom: 0;
+    padding: 5px;
+    height: 175px
+}
+
+.news-item-body > .news-item-tags {
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+    height: 30px;
+}
+
+.label.label-default.tag {
+    font-weight: normal;
+    background-color: #00994f;
+    color: #000000;
+    font-size: 95%;
+}

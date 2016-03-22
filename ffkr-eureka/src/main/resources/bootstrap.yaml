@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: ffkr-balancer
+  cloud:
+    config:
+      uri: http://localhost:8888
