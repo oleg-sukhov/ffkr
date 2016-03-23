@@ -1,28 +1,26 @@
 var gulp = require('gulp'),
-    react = require('gulp-react'),
     bower = require('gulp-bower'),
-    babel = require('gulp-babel'),
-    run = require('gulp-run'),
-    concat = require('gulp-concat'),
-    del = require('del'),
+    browserify = require('browserify'),
+    babelify = require('babelify'),
     source = require('vinyl-source-stream'),
+    del = require('del'),
     package = require('./package.json');
 
 gulp.task('bower', function () {
-    return bower('./bower_components')
-        .pipe(gulp.dest(package.dest.lib))
+     return bower('./bower_components')
+         .pipe(gulp.dest(package.dest.lib))
 });
 
 gulp.task('clean', function (cb) {
-    del(['dist/**'], cb);
+     del(['dist/**'], cb);
 });
 
-gulp.task('js', function () {
-    return gulp.src(package.paths.jsx)
-        .pipe(react({ harmony: true, es6module: true}))
-        .pipe(babel({"presets": ["es2015", "react"]}))
-        .pipe(gulp.dest(package.dest.dist))
+gulp.task('build', function () {
+    browserify({ entries: package.paths.jsx, extensions: ['.jsx'], debug: true })
+        .transform('babelify', {presets: ['es2015', 'react']})
+        .bundle()
+        .pipe(source('ffkr.js'))
+        .pipe(gulp.dest(package.dest.dist));
 });
 
-// Just running the two tasks
-gulp.task('default', ['bower', 'clean', 'js']);
+gulp.task('default', ['bower', 'clean', 'build']);

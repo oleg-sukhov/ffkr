@@ -18,7 +18,7 @@
   },
   "paths": {
     "js": "./assets/js/src/**/*.js",
-    "jsx": "./assets/js/src/**/*.jsx",
+    "jsx": "./assets/js/src/ffkr.jsx",
     "app": "./assets/js/src/ffkr.js",
     "html": "*.html"
   },
