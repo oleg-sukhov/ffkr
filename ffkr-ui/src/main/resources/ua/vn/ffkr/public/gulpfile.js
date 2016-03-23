@@ -19,7 +19,7 @@ gulp.task('clean', function (cb) {
 
 gulp.task('js', function () {
     return gulp.src(package.paths.jsx)
-        .pipe(react({ harmony: true, es6module: true} ))
+        .pipe(react({ harmony: true, es6module: true}))
         .pipe(babel({"presets": ["es2015", "react"]}))
         .pipe(gulp.dest(package.dest.dist))
 });
