@@ -12,15 +12,15 @@ gulp.task('bower', function () {
 });
 
 gulp.task('clean', function (cb) {
-     del(['dist/**'], cb);
+     del(['dist/app/**'], cb);
 });
 
 gulp.task('build', function () {
     browserify({ entries: package.paths.jsx, extensions: ['.jsx'], debug: true })
-        .transform('babelify', {presets: ['es2015', 'react']})
+        .transform('babelify', {presets: ['es2015', 'react'], compact: true})
         .bundle()
         .pipe(source('ffkr.js'))
         .pipe(gulp.dest(package.dest.dist));
 });
 
-gulp.task('default', ['bower', 'clean', 'build']);
+gulp.task('default', ['clean', 'bower' , 'build']);

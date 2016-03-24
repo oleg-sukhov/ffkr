@@ -11,11 +11,11 @@ class Navbar extends React.Component {
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
                             <li><a href="#">Articles</a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown">Dropdown
-                                    <b class="caret"></b>
+                            <li className="dropdown">
+                                <a className="dropdown-toggle" data-toggle="dropdown">Dropdown
+                                    <b className="caret"></b>
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul className="dropdown-menu">
                                     <li><a href="#">Action</a></li>
                                     <li><a href="#">Another action</a></li>
                                     <li><a href="#">Something else here</a></li>
