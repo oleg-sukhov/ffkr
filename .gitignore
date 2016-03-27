@@ -7,3 +7,5 @@ bower_components
 gradle/
 *.bat
 gradlew
+dist/
+node_modules/

@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Button} from 'elemental';
+import Header from './components/common/header.jsx';
+import Navbar from './components/common/navbar.jsx';
+import Footer from './components/common/footer.jsx';
 
 class Home extends React.Component {
 
     render() {
         return (
             <div>
-                <Button type="default-success">Default Success</Button>
+                <Header/>
+                <Navbar/>
+                <Footer/>
             </div>
         );
     }

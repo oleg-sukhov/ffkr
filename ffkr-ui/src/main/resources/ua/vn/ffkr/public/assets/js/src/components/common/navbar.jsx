@@ -4,16 +4,16 @@ class Navbar extends React.Component {
 
     render() {
         return (
-            <nav class="navbar ffkr-navbar">
-                <div class="container-fluid">
-                    <div class="navbar-header">
+            <nav className="navbar ffkr-navbar">
+                <div className="container-fluid">
+                    <div className="navbar-header">
                     </div>
-                    <div class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav">
+                    <div className="collapse navbar-collapse">
+                        <ul className="nav navbar-nav">
                             <li><a href="#">Articles</a></li>
                             <li className="dropdown">
                                 <a className="dropdown-toggle" data-toggle="dropdown">Dropdown
-                                    <b className="caret"></b>
+                                    <b className="caret"/>
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li><a href="#">Action</a></li>
