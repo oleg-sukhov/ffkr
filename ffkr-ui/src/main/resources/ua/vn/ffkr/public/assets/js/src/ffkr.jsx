@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Header from './components/common/header.jsx';
 import Navbar from './components/common/navbar.jsx';
 import Footer from './components/common/footer.jsx';
+import Articles from './components/articles/articles.jsx';
 
 class Home extends React.Component {
 
@@ -11,6 +12,7 @@ class Home extends React.Component {
             <div>
                 <Header/>
                 <Navbar/>
+                <Articles/>
                 <Footer/>
             </div>
         );

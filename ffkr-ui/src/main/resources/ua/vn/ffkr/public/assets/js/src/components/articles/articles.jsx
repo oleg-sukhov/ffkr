@@ -1,6 +1,13 @@
+import React from 'react';
+import BriefArticle from './brief-article.jsx';
+
 class Articles extends React.Component {
 
     render() {
-        return '<div><h1>Articles page</h1></div>';
+        return (
+            <BriefArticle/>
+        );
     }
 }
+
+export default Articles;
