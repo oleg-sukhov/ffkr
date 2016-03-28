@@ -20,7 +20,6 @@ class BriefArticle extends React.Component {
                             <span className="label label-default tag">Dinamo Kiev</span>
                             <span className="label label-default tag">Barcelona</span>
                             <span className="label label-default tag">Championship</span>
-                            <span className="label label-default tag">Carlo Anchelotti</span>
                         </div>
                     </div>
                 </div>
